@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "IronPDF for C++ – Beta Software Program",
+    "description": "Join the IronPDF for C++ beta program and be the first to access powerful PDF tools."
+  },
+  "hero": {
+    "eyebrow": "Building on the success of IronPDF for .NET",
+    "title": "Beta Software Program",
+    "subtitle": "IronPDF for C++",
+    "note": "Coming soon"
+  },
+  "cta": {
+    "title": "Be one of the first",
+    "subtitle": "Sign up NOW to get early access!",
+    "placeholder": "Enter email address",
+    "button": "Sign up now",
+    "footnote": "IronPDF Beta Program also coming soon for Python | NodeJS | Java"
+  },
+  "features": [
+    "Generate PDFs from HTML in C++",
+    "Combine, split, and modify PDFs quickly in C++",
+    "Extract text and images from PDFs using C++"
+  ],
+  "description": [
+    "The new IronPDF library for C++ enhances the C++ developer’s toolset with robust PDF generation and conversion capabilities.",
+    "IronPDF for C++ helps developers create high-performance applications with precision and control."
+  ]
+}

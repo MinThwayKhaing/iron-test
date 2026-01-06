@@ -1,0 +1,42 @@
+/* =========================
+   SITE HEADER / NAV
+========================= */
+
+.site-header {
+  position: absolute;
+  top: var(--nav-padding-y);
+  left: var(--nav-padding-x);
+  right: var(--nav-padding-x);
+  z-index: var(--z-nav);
+}
+
+
+/* Logo wrapper */
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Logo image — CLS safe */
+.nav-logo img {
+  display: block;
+  width: auto;
+  height: 14px;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--nav-gap);
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--nav-gap);
+}

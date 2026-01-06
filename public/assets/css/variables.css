@@ -1,0 +1,16 @@
+:root {
+  /* Colors */
+  --bg-layout: #2C0F29;
+  --white: #FFFFFF;
+
+  /* Typography */
+  --font-primary: "Gotham", Arial, sans-serif;
+
+  /* Spacing */
+  --nav-gap: 24px;
+  --nav-padding-x: 14px;
+  --nav-padding-y: 13px;
+
+  /* Z-index */
+  --z-nav: 100;
+}

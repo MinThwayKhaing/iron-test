@@ -1,0 +1,65 @@
+/* =========================
+   RESPONSIVE NAV
+========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    gap: 16px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE HERO
+========================= */
+@media (max-width: 1200px) {
+  .hero-section {
+    flex-direction: column;
+ 
+    text-align: center;
+  }
+
+  .hero-text-box {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .hero-title {
+    justify-content: center;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .hero-image-box {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .hero-image-box .hero-image {
+    width: 70%;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .hero-context {
+    font-size: 16px;
+  }
+
+  .hero-subtext {
+    font-size: 12px;
+  }
+
+  .hero-image-box .hero-image {
+    width: 80%;
+  }
+}
