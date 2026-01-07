@@ -1,228 +1,109 @@
 /* =========================
-   PRODUCT OVERVIEW SECTION
+   PRODUCT OVERVIEW
 ========================= */
 
 .product-overview {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   background: #1a1a2e;
 }
 
-/* LAYOUT 1: HEADING & FEATURES */
+/* TITLE SECTION */
 .product-heading-section {
-  width: 100%;
   padding: 56px 0;
-  background: var(--bg-layout);
   display: flex;
   justify-content: center;
 }
 
 .product-inner {
-  width: 100%;
   max-width: 1600px;
+  width: 100%;
   padding: 0 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.product-heading {
-  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 44px;
   text-align: center;
+}
+
+/* TITLE */
+.product-heading {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 900;
   color: #fff;
-  margin: 0 0 28px 0;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: center;
+  margin-bottom: 28px;
 }
 
-.coming-soon-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #E01A59;
-  color: #fff;
-  padding: 4px 10px;
-  border-radius: 16px;
-  font-size: 12px;
-  font-weight: 600;
+.product-title-text {
+  display: inline-block;
 }
 
-.coming-soon-badge svg {
-  width: 12px;
-  height: 12px;
+/* FLOATING BADGE */
+.coming-soon-badge-svg {
+  position: absolute;
+  top: -22px;
+  right: -52px;
+  width: 81px;
+  height: 81px;
+  box-shadow: 0 10px 30px rgba(24,24,24,0.2);
+  pointer-events: none;
 }
 
+/* FEATURES */
 .product-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  width: 100%;
 }
 
 .feature-item {
   display: flex;
   gap: 10px;
-  align-items: flex-start;
 }
 
 .feature-bullet {
+  color: #fff;
   font-weight: 700;
-  font-size: 16px;
-  color: #E01A59;
-  flex-shrink: 0;
-  margin-top: 2px;
 }
 
 .feature-text {
-  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 300;
+  color: #fff;
   font-size: 16px;
   line-height: 26px;
-  color: #ffffff;
-  margin: 0;
 }
 
-/* LAYOUT 2: GRADIENT OVERLAY + DESCRIPTION */
+/* DESCRIPTION */
 .product-content-section {
-  width: 100%;
-  height: 274px;
-  background: var(--bg-layout); /* #1706174D */
-  display: flex;
-  align-items: center;
   position: relative;
-  overflow: hidden;
   padding: 40px 0;
 }
 
 .product-gradient-overlay {
   position: absolute;
-  width: 74%;
-  height: 343px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(144.39deg, #E01A59 -32.66%, #460A48 71.03%);
-  -webkit-backdrop-filter: blur(235px);
-  backdrop-filter: blur(235px);
-  border-radius: 8px;
-  opacity: 0.3;
-  z-index: 1;
-}
-
-.product-content-section .product-inner {
-  position: relative;
-  z-index: 2;
+  inset: 0;
+  background: linear-gradient(144deg, #E01A59, #460A48);
+  opacity: 0.25;
+  filter: blur(200px);
 }
 
 .product-description {
-  text-align: center;
+  position: relative;
   max-width: 800px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .product-description p {
-  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #ffffff;
-  margin: 0;
-  letter-spacing: 0.5px;
-}
-
-.product-description strong {
-  font-weight: 500;
   color: #fff;
+  line-height: 28px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 1024px) {
-  .product-heading {
-    font-size: 32px;
-    line-height: 38px;
-  }
-
-  .product-features {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .product-inner {
-    padding: 0 24px;
-  }
-}
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .product-heading-section {
-    padding: 40px 0;
-  }
-
   .product-heading {
     font-size: 28px;
-    line-height: 32px;
-    flex-direction: column;
-    gap: 8px;
   }
 
-  .coming-soon-badge {
-    font-size: 11px;
-    padding: 3px 8px;
-  }
-
-  .product-features {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .product-content-section {
-    height: auto;
-    padding: 32px 0;
-  }
-
-  .product-description p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .product-inner {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .product-heading-section {
-    padding: 28px 0;
-  }
-
-  .product-heading {
-    font-size: 22px;
-    line-height: 26px;
-  }
-
-  .feature-text {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .product-content-section {
-    padding: 20px 0;
-  }
-
-  .product-description p {
-    font-size: 13px;
-    line-height: 20px;
-  }
-
-  .product-inner {
-    padding: 0 16px;
+  .coming-soon-badge-svg {
+    position: static;
+    display: block;
+    margin: 12px auto 0;
+    transform: rotate(-10deg);
   }
 }
