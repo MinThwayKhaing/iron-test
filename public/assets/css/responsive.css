@@ -1,10 +1,26 @@
+/* =========================
+   TABLET & MEDIUM DEVICES (max-width: 1200px)
+========================= */
 @media (max-width: 1200px) {
   .hero-section {
     height: auto;
   }
 
-  .hero-text-box,
-  .hero-image-box,
+  .hero-text-box {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero-image-box {
+    display: none !important;
+  }
+
   .hero-email-box {
     position: relative;
     left: auto;
@@ -12,44 +28,369 @@
     width: 100%;
   }
 
-  .hero-image-box {
-    display: none;
+  .hero-logo {
+    width: 120px;
+    margin-bottom: 30px;
   }
 
-  .hero-text-box {
-    align-items: center;
-    text-align: center;
+  .email-title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .email-subtitle {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .email-content {
     margin: 0 auto;
     align-items: center;
     text-align: center;
+    padding: 0 20px;
+    width: 100%;
   }
 
   .email-form {
     flex-direction: column;
+    gap: 15px;
+    width: 100%;
   }
 
   .email-input-wrapper {
     width: 100%;
-    height: 64px;
+    max-width: 450px;
+    height: 56px;
   }
 
   .email-input {
     width: 100%;
-    padding-right: 120px;
+    padding-right: 130px;
+    padding-left: 20px;
+    font-size: 14px;
+    height: 56px;
   }
 
   .email-submit {
-    width: 110px;
-    height: 48px;
+    width: 120px;
+    height: 50px;
     font-size: 12px;
+    right: 3px;
   }
 
   .email-footer {
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .email-footer-text {
+    white-space: normal;
   }
 }
+
+/* =========================
+   MOBILE & SMALL DEVICES (max-width: 768px)
+========================= */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+  }
+
+  .hero-text-box {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .hero-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .hero-context {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hero-subtext {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .hero-email-box {
+    padding: 40px 0;
+  }
+
+  .email-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 8px 0;
+  }
+
+  .email-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 15px 0;
+  }
+
+  .email-content {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .email-form {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .email-input-wrapper {
+    width: 100%;
+    height: 50px;
+  }
+
+  .email-input {
+    width: 100%;
+    padding-right: 110px;
+    padding-left: 16px;
+    font-size: 13px;
+    border: 2px solid #C6AAC6;
+    border-radius: 50px;
+  }
+
+  .email-submit {
+    width: 100px;
+    height: 44px;
+    font-size: 11px;
+    border-radius: 50px;
+    gap: 4px;
+  }
+
+  .email-submit svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .coming-soon-btn {
+    height: 28px;
+    padding: 0 14px;
+    font-size: 12px;
+  }
+
+  .email-footer-text {
+    font-size: 12px;
+    white-space: normal;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES (max-width: 480px)
+========================= */
+@media (max-width: 480px) {
+
+  .hero-logo {
+    width: 80px;
+    margin-bottom: 16px;
+  }
+
+  .hero-context {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero-subtext {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  .hero-email-box {
+    padding: 30px 0;
+  }
+
+  .email-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 6px 0;
+  }
+
+  .email-subtitle {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0 0 12px 0;
+  }
+
+  .email-content {
+    padding: 0 16px;
+  }
+
+  .email-form {
+    gap: 10px;
+  }
+
+  .email-input-wrapper {
+    height: 44px;
+  }
+
+  .email-input {
+    padding-right: 100px;
+    padding-left: 14px;
+    font-size: 12px;
+    border-width: 2px;
+  }
+
+  .email-submit {
+    width: 90px;
+    height: 40px;
+    font-size: 10px;
+    right: 2px;
+  }
+
+  .coming-soon-btn {
+    height: 26px;
+    padding: 0 12px;
+    font-size: 11px;
+  }
+
+  .email-footer {
+    gap: 8px;
+  }
+
+  .email-footer-text {
+    font-size: 11px;
+  }
+}
+
+/* =========================
+   TINY DEVICES (max-width: 320px)
+========================= */
+@media (max-width: 320px) {
+  .site-header {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    right: 12px;
+  }
+
+  .main-nav {
+    gap: 8px;
+  }
+
+  .nav-logo img {
+    height: 10px;
+  }
+
+  .nav-link {
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    gap: 2px;
+  }
+
+  .nav-arrow {
+    width: 3px;
+    display: none;
+  }
+
+  .nav-item {
+    gap: 2px;
+  }
+
+  .hero-text-box {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 0;
+  }
+
+  .hero-logo {
+    width: 70px;
+    margin-bottom: 12px;
+  }
+
+  .hero-context {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .hero-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .hero-subtext {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  .hero-email-box {
+    padding: 24px 0;
+  }
+
+  .email-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 4px 0;
+  }
+
+  .email-subtitle {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 10px 0;
+  }
+
+  .email-content {
+    padding: 0 12px;
+  }
+
+  .email-form {
+    gap: 8px;
+  }
+
+  .email-input-wrapper {
+    height: 40px;
+  }
+
+  .email-input {
+    padding-right: 88px;
+    padding-left: 12px;
+    font-size: 11px;
+    border-width: 2px;
+  }
+
+  .email-submit {
+    width: 82px;
+    height: 36px;
+    font-size: 9px;
+    right: 2px;
+  }
+
+  .email-submit svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .coming-soon-btn {
+    height: 24px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .email-footer {
+    gap: 6px;
+    flex-direction: column;
+  }
+
+  .email-footer-text {
+    font-size: 10px;
+  }
+}
+
 

@@ -5,6 +5,9 @@
       src="/assets/svg/LOGO-2.svg"
       alt="Iron Software Logo"
       class="hero-logo"
+      width="150"
+      height="auto"
+      loading="eager"
     />
 
     <p class="hero-context">
@@ -23,8 +26,11 @@
   <div class="hero-image-box">
     <img
       src="/assets/svg/IMAGE.svg"
-      alt="Hero Illustration"
+      alt="Hero Illustration - IronPDF for C++"
       class="hero-image"
+      width="804"
+  
+      loading="lazy"
     />
   </div>
 
@@ -41,10 +47,12 @@
             type="email"
             placeholder="<?= $cta['placeholder'] ?? 'Enter email address' ?>"
             class="email-input"
+            required
+            aria-label="Email address"
           />
-          <button type="submit" class="email-submit">
+          <button type="submit" class="email-submit" aria-label="Sign up for beta access">
             <?= $cta['button'] ?? 'Sign up now' ?>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </button>
