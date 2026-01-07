@@ -1,191 +1,169 @@
 /* =========================
    HERO SECTION LAYOUT
 ========================= */
-.hero-section {
 
+.hero-section {
+  position: relative;
   width: 100%;
-  background-color: var(--bg-layout);
+  height: 741px;
   overflow: hidden;
 }
 
 /* =========================
-   LEFT HERO TEXT BOX
+   LEFT HERO CONTENT
 ========================= */
+
 .hero-text-box {
   position: absolute;
-  width: 598px;       /* Figma width */
-  height: 262px;      /* Figma height */
   top: 118px;
-  left: 215px;
+  left: 13.44%; /* 215 / 1600 */
+  width: 37.375%; /* 598 / 1600 */
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  opacity: 1;
 }
 
 .hero-logo {
   width: 150px;
-  height: auto;
-}
-
-/* Use dynamic typography variables */
-.hero-context {
-  font-family: var(--font-primary);
-  font-weight: var(--fw-bold);
-  font-size: var(--hero-context-size);
-  line-height: var(--hero-context-line);
-  color: #FFFFFF;
-  margin: 0;
-}
-
-.hero-title {
-  font-family: var(--font-primary);
-  font-weight: var(--fw-extra-bold);
-  font-size: var(--hero-title-size);
-  line-height: var(--hero-title-line);
-  color: #FFFFFF;
-  margin: 0;
-}
-
-.hero-title .hero-highlight {
-  font-family: var(--font-primary);
-  font-weight: var(--fw-extra-bold);
-  font-size: var(--hero-title-size);
-  line-height: var(--hero-title-line);
-  color: #C6AAC6;
-  padding: 0 4px;
-}
-
-.hero-subtext {
-  font-family: var(--font-primary);
-  font-weight: var(--fw-light);
-  font-size: var(--hero-subtext-size);
-  line-height: var(--hero-subtext-line);
-  color: #8F618F;
-  margin-top: 10px;
 }
 
 /* =========================
    RIGHT HERO IMAGE
 ========================= */
+
 .hero-image-box {
   position: absolute;
-  width: 804.87px;  /* Figma width */
-  height: 710px;    /* Figma height */
-  z-index: 1; 
-  left: 850px;
-  opacity: 1;
+  left: 53.125%; /* 850 / 1600 */
+  width: 50.3%;
+  max-width: 804.87px;
+  height: 710px;
+  z-index: 1;
 }
 
-.hero-image {
+.hero-image-box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
 /* =========================
-   EMAIL SIGNUP BOX
+   EMAIL SIGNUP SECTION
 ========================= */
+
 .hero-email-box {
   position: absolute;
-  width: 100%;
-  height: 327px;  /* Figma height */
   top: 414px;
   left: 0;
-  background: linear-gradient(90deg, #8E608E 28.16%, #402640 67.82%, #371A34 83.75%);
+  width: 100%;
+  height: 327px;
+  background: linear-gradient(
+    90deg,
+    #8E608E 28.16%,
+    #402640 67.82%,
+    #371A34 83.75%
+  );
   display: flex;
-  justify-content: center;
   align-items: center;
-  opacity: 1;
 }
 
-.hero-email-box .email-content {
-  width: 40%;
-  text-align: center;
-}
-
-.hero-email-box h2 {
-  font-family: var(--font-primary);
-  font-weight: var(--fw-bold);
-  font-size: var(--email-h2-size);
-  line-height: var(--email-h2-line);
-  color: #FFFFFF;
-  margin-bottom: 20px;
-}
-
-.hero-email-box form {
+/* Align email content same as hero text */
+.email-content {
+  margin-left: 13.44%; /* 215 / 1600 */
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.hero-email-box input[type="email"] {
-  width: 70%;
-  max-width: 300px;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.hero-email-box button {
-  padding: 10px 20px;
-  background-color: #C6AAC6;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  box-sizing: border-box;
+  flex-direction: column;
+  gap: 24px;
 }
 
 /* =========================
-   RESPONSIVE BREAKPOINTS
+   EMAIL FORM (FIXED FLEX)
 ========================= */
+
+.email-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.email-input {
+  width: 530px;
+  height: 64px;
+  border-radius: 81px;
+  padding-left: 26px;
+  border: 3px solid #C6AAC6;
+  outline: none;
+}
+
+.email-submit {
+  width: 180px;
+  height: 64px;
+  border-radius: 79px;
+  background: #E01A59;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   EMAIL FOOTER (INLINE FIX)
+========================= */
+
+.email-footer {
+  display: flex;          /* ✅ FIX */
+  align-items: center;
+  gap: 16px;
+}
+
+.coming-soon-btn {
+  height: 32px;
+  padding: 0 20px;
+  border-radius: 126px;
+  background: #C6AAC6;
+  border: none;
+  cursor: default;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 1200px) {
+  .hero-section {
+    height: auto;
+    padding: 80px 20px;
+  }
+
   .hero-text-box,
   .hero-image-box,
   .hero-email-box {
     position: relative;
-    width: 90%;
-    top: auto;
     left: auto;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
+    top: auto;
+    width: 100%;
   }
 
   .hero-text-box {
-    gap: 20px;
+    align-items: center;
+    text-align: center;
   }
 
-  .hero-image-box {
-    margin-top: 20px;
+  .email-content {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
   }
 
-  .hero-email-box .email-content {
-    width: 80%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: var(--hero-title-size-sm);
-    line-height: var(--hero-title-line-sm);
+  .email-form {
+    flex-direction: column;
   }
 
-  .hero-context {
-    font-size: var(--hero-context-size-sm);
-  }
-
-  .hero-subtext {
-    font-size: var(--hero-subtext-size-sm);
-  }
-
-  .hero-email-box input[type="email"] {
+  .email-input,
+  .email-submit {
     width: 100%;
-    max-width: none;
   }
 
-  .hero-email-box button {
-    width: 100%;
-    max-width: none;
+  .email-footer {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

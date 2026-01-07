@@ -15,13 +15,38 @@
   </div>
 
   <!-- Email Signup Box -->
-  <div class="hero-email-box">
-    <div class="email-content">
-      <h2>Sign Up for Updates</h2>
-      <form>
-        <input type="email" placeholder="Your Email">
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+<div class="hero-email-box">
+  <div class="email-content">
+
+    <p class="email-title">Be one of the first</p>
+    <p class="email-subtitle">Sign up NOW to get early access!</p>
+
+    <form class="email-form">
+      <input
+        type="email"
+        placeholder="Enter email address"
+        class="email-input"
+      />
+
+      <button type="submit" class="email-submit">
+        Sign up now
+        <svg width="16" height="16" viewBox="0 0 16 16">
+          <!-- your icon -->
+        </svg>
+      </button>
+    </form>
+
+<div class="email-footer">
+  <button class="coming-soon-btn">Coming Soon</button>
+
+  <p class="email-footer-text">
+    IronPDF Beta Program also coming soon for
+    <span>Python</span> | <span>Node.JS</span> | <span>Java</span>
+  </p>
+</div>
+
+
   </div>
+</div>
+
 </section>

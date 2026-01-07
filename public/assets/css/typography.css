@@ -31,6 +31,21 @@
 
   --hero-context-size-sm: 16px;
   --hero-subtext-size-sm: 12px;
+    /* Email input */
+  --email-input-size: 14px;
+  --email-input-line: 14px;
+
+  /* Email button */
+  --email-btn-size: 16px;
+  --email-btn-line: 16px;
+
+  /* Coming soon button */
+  --email-soon-size: 14px;
+  --email-soon-line: 28px;
+
+  /* Footer text */
+  --email-footer-size: 16px;
+  --email-footer-line: 28px;
 }
 
 /* =========================
