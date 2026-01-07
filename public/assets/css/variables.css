@@ -1,16 +1,30 @@
 :root {
-  /* Colors */
+  /* =========================
+     COLORS
+  ========================= */
   --bg-layout: #2C0F29;
   --white: #FFFFFF;
 
-  /* Typography */
+  --accent-primary: #C6AAC6;
+  --accent-secondary: #8F618F;
+  --accent-danger: #E01A59;
+
+  /* =========================
+     TYPOGRAPHY
+  ========================= */
   --font-primary: "Gotham", Arial, sans-serif;
 
-  /* Spacing */
+  /* =========================
+     LAYOUT CONSTANTS
+  ========================= */
+  --layout-max-width: 1600px;
+  --hero-left-offset: 13.44%; /* 215 / 1600 */
+
+  /* =========================
+     NAV
+  ========================= */
   --nav-gap: 24px;
   --nav-padding-x: 14px;
   --nav-padding-y: 13px;
-
-  /* Z-index */
   --z-nav: 100;
 }

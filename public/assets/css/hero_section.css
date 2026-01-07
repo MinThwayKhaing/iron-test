@@ -1,5 +1,5 @@
 /* =========================
-   HERO SECTION LAYOUT
+   HERO SECTION
 ========================= */
 
 .hero-section {
@@ -16,14 +16,37 @@
 .hero-text-box {
   position: absolute;
   top: 118px;
-  left: 13.44%; /* 215 / 1600 */
-  width: 37.375%; /* 598 / 1600 */
+  left: 13.44%;          /* 215 / 1600 */
+  width: 37.375%;        /* 598 / 1600 */
   display: flex;
   flex-direction: column;
 }
 
+/* SVG LOGO */
 .hero-logo {
   width: 150px;
+  margin-bottom: 40px;   /* 🔥 EXACT: SVG → text gap */
+}
+
+/* Building on the success... */
+.hero-context {
+  margin: 0;             /* 🔥 NO GAP below */
+}
+
+/* Beta Software Program + IronPDF for C++ */
+.hero-title {
+  margin: 0;
+}
+
+/* Highlight */
+.hero-highlight {
+  color: #C6AAC6;
+}
+
+/* Coming Soon */
+.hero-subtext {
+  margin-top: 10px;      /* 🔥 EXACT gap */
+  color: #8F618F;
 }
 
 /* =========================
@@ -32,21 +55,21 @@
 
 .hero-image-box {
   position: absolute;
-  left: 53.125%; /* 850 / 1600 */
+  left: 53.125%;         /* 850 / 1600 */
   width: 50.3%;
   max-width: 804.87px;
   height: 710px;
   z-index: 1;
 }
 
-.hero-image-box img {
+.hero-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
 /* =========================
-   EMAIL SIGNUP SECTION
+   EMAIL SECTION
 ========================= */
 
 .hero-email-box {
@@ -63,18 +86,34 @@
   );
   display: flex;
   align-items: center;
+
 }
 
-/* Align email content same as hero text */
 .email-content {
-  margin-left: 13.44%; /* 215 / 1600 */
+  margin-left: 13.44%;   /* SAME AS HERO TEXT */
   display: flex;
   flex-direction: column;
-  gap: 24px;
+
 }
 
 /* =========================
-   EMAIL FORM (FIXED FLEX)
+   EMAIL TEXT
+========================= */
+
+.email-title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.email-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* =========================
+   EMAIL FORM
 ========================= */
 
 .email-form {
@@ -98,29 +137,36 @@
   border-radius: 79px;
   background: #E01A59;
   border: none;
-  cursor: pointer;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  cursor: pointer;
 }
 
 /* =========================
-   EMAIL FOOTER (INLINE FIX)
+   EMAIL FOOTER
 ========================= */
 
 .email-footer {
-  display: flex;          /* ✅ FIX */
+  display: flex;
   align-items: center;
   gap: 16px;
 }
 
 .coming-soon-btn {
   height: 32px;
-  padding: 0 20px;
+  padding: 0 18px;
   border-radius: 126px;
   background: #C6AAC6;
   border: none;
+  color: #8F618F;
   cursor: default;
+}
+
+.email-footer-text {
+  white-space: nowrap;
 }
 
 /* =========================
@@ -148,8 +194,7 @@
   }
 
   .email-content {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     align-items: center;
   }
 
@@ -165,5 +210,6 @@
   .email-footer {
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
   }
 }
