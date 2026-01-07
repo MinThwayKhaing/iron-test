@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/assets/css/components.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
   <link rel="stylesheet" href="/assets/css/hero_section.css">
+   <link rel="stylesheet" href="/assets/css/typography.css">
 </head>
 
 <body>

@@ -51,7 +51,7 @@
       </form>
 
       <div class="email-footer">
-        <button class="coming-soon-btn">Coming Soon</button>
+        <button class="coming-soon-btn"># Coming Soon</button>
 
         <p class="email-footer-text">
           IronPDF Beta Program also coming soon for

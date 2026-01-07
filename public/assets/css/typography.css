@@ -44,7 +44,7 @@
 }
 
 .hero-highlight {
-  background: var(--accent-primary);
+  color: #C6AAC6;
   padding: 0 4px;
 }
 
@@ -53,4 +53,22 @@
   font-size: var(--hero-subtext-size);
   line-height: var(--hero-subtext-line);
   color: var(--accent-secondary);
+}
+/* =========================
+   EMAIL FOOTER TYPOGRAPHY
+========================= */
+
+.email-footer-text {
+  font-family: Gotham, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0px;
+}
+
+.email-footer-text span {
+  font-family: Gotham, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
 }
