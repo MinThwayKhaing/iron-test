@@ -1,0 +1,104 @@
+/* =========================
+   TYPOGRAPHY VARIABLES
+========================= */
+:root {
+  /* Font Families */
+  --font-primary: "Gotham", Arial, sans-serif;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-extra-bold: 900;
+
+  /* Hero Text Sizes (px) */
+  --hero-context-size: 18px;
+  --hero-context-line: 26px;
+
+  --hero-title-size: 50px;
+  --hero-title-line: 54px;
+
+  --hero-subtext-size: 14px;
+  --hero-subtext-line: 28px;
+
+  /* Email Box */
+  --email-h2-size: 24px;
+  --email-h2-line: 32px;
+
+  /* Responsive adjustments */
+  --hero-title-size-sm: 32px;
+  --hero-title-line-sm: 38px;
+
+  --hero-context-size-sm: 16px;
+  --hero-subtext-size-sm: 12px;
+}
+
+/* =========================
+   HERO TYPOGRAPHY
+========================= */
+.hero-context {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--hero-context-size);
+  line-height: var(--hero-context-line);
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.hero-title {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--hero-title-size);
+  line-height: var(--hero-title-line);
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.hero-title .hero-highlight {
+  background-color: #C6AAC6;
+  padding: 0 4px;
+  font-family: var(--font-primary);
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--hero-title-size);
+  line-height: var(--hero-title-line);
+  color: #FFFFFF;
+}
+
+.hero-subtext {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-light);
+  font-size: var(--hero-subtext-size);
+  line-height: var(--hero-subtext-line);
+  color: #8F618F;
+  margin-top: 10px;
+}
+
+/* =========================
+   EMAIL BOX TYPOGRAPHY
+========================= */
+.hero-email-box h2 {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--email-h2-size);
+  line-height: var(--email-h2-line);
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   RESPONSIVE HERO TYPOGRAPHY
+========================= */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: var(--hero-title-size-sm);
+    line-height: var(--hero-title-line-sm);
+  }
+
+  .hero-context {
+    font-size: var(--hero-context-size-sm);
+  }
+
+  .hero-subtext {
+    font-size: var(--hero-subtext-size-sm);
+  }
+}

@@ -19,7 +19,7 @@
 @media (max-width: 1200px) {
   .hero-section {
     flex-direction: column;
- 
+    padding: 100px 30px 50px;
     text-align: center;
   }
 

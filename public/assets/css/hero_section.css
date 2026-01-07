@@ -1,78 +1,191 @@
 /* =========================
-   HERO SECTION
+   HERO SECTION LAYOUT
 ========================= */
 .hero-section {
+
   width: 100%;
-  min-height: 710px;
-  display: flex;
-  align-items: center;
-  
   background-color: var(--bg-layout);
-  position: relative;
   overflow: hidden;
 }
 
+/* =========================
+   LEFT HERO TEXT BOX
+========================= */
 .hero-text-box {
-  max-width: 600px;
+  position: absolute;
+  width: 598px;       /* Figma width */
+  height: 262px;      /* Figma height */
+  top: 118px;
+  left: 215px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  z-index: 2;
+  gap: 40px;
+  opacity: 1;
 }
 
 .hero-logo {
-  width: auto;
-  max-width: 150px;
+  width: 150px;
   height: auto;
 }
 
+/* Use dynamic typography variables */
 .hero-context {
   font-family: var(--font-primary);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: var(--fw-bold);
+  font-size: var(--hero-context-size);
+  line-height: var(--hero-context-line);
   color: #FFFFFF;
   margin: 0;
 }
 
 .hero-title {
   font-family: var(--font-primary);
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 54px;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--hero-title-size);
+  line-height: var(--hero-title-line);
   color: #FFFFFF;
+  margin: 0;
 }
 
-.hero-highlight {
-  color: #C6AAC6; /* Figma highlight color */
+.hero-title .hero-highlight {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--hero-title-size);
+  line-height: var(--hero-title-line);
+  color: #C6AAC6;
+  padding: 0 4px;
 }
 
 .hero-subtext {
   font-family: var(--font-primary);
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 28px;
-  color: #8F618F; /* Figma subtext color */
+  font-weight: var(--fw-light);
+  font-size: var(--hero-subtext-size);
+  line-height: var(--hero-subtext-line);
+  color: #8F618F;
   margin-top: 10px;
 }
 
-/* Hero image */
+/* =========================
+   RIGHT HERO IMAGE
+========================= */
 .hero-image-box {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  width: 804.87px;  /* Figma width */
+  height: 710px;    /* Figma height */
+  z-index: 1; 
+  left: 850px;
+  opacity: 1;
 }
 
-.hero-image-box .hero-image {
-  width: 90%; /* scales nicely */
-  max-width: 805px;
-  height: auto;
-  position: relative;
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* =========================
+   EMAIL SIGNUP BOX
+========================= */
+.hero-email-box {
+  position: absolute;
+  width: 100%;
+  height: 327px;  /* Figma height */
+  top: 414px;
+  left: 0;
+  background: linear-gradient(90deg, #8E608E 28.16%, #402640 67.82%, #371A34 83.75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.hero-email-box .email-content {
+  width: 40%;
+  text-align: center;
+}
+
+.hero-email-box h2 {
+  font-family: var(--font-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--email-h2-size);
+  line-height: var(--email-h2-line);
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.hero-email-box form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-email-box input[type="email"] {
+  width: 70%;
+  max-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.hero-email-box button {
+  padding: 10px 20px;
+  background-color: #C6AAC6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+@media (max-width: 1200px) {
+  .hero-text-box,
+  .hero-image-box,
+  .hero-email-box {
+    position: relative;
+    width: 90%;
+    top: auto;
+    left: auto;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero-text-box {
+    gap: 20px;
+  }
+
+  .hero-image-box {
+    margin-top: 20px;
+  }
+
+  .hero-email-box .email-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: var(--hero-title-size-sm);
+    line-height: var(--hero-title-line-sm);
+  }
+
+  .hero-context {
+    font-size: var(--hero-context-size-sm);
+  }
+
+  .hero-subtext {
+    font-size: var(--hero-subtext-size-sm);
+  }
+
+  .hero-email-box input[type="email"] {
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero-email-box button {
+    width: 100%;
+    max-width: none;
+  }
 }
