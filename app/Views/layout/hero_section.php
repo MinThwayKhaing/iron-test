@@ -36,18 +36,19 @@
       <p class="email-subtitle">Sign up NOW to get early access!</p>
 
       <form class="email-form">
-        <input
-          type="email"
-          placeholder="Enter email address"
-          class="email-input"
-        />
-
-        <button type="submit" class="email-submit">
-          Sign up now
-          <svg width="16" height="16" viewBox="0 0 16 16">
-            <!-- icon -->
-          </svg>
-        </button>
+        <div class="email-input-wrapper">
+          <input
+            type="email"
+            placeholder="Enter email address"
+            class="email-input"
+          />
+          <button type="submit" class="email-submit">
+            Sign up now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
       </form>
 
       <div class="email-footer">

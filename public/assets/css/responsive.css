@@ -21,4 +21,8 @@
   .email-form {
     flex-direction: column;
   }
+
+  .email-input-wrapper {
+    width: 100%;
+  }
 }
