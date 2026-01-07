@@ -4,10 +4,25 @@
 
 .product-overview {
   width: 100%;
-  background: #1a1a2e;
+  position: relative;
+  background: var(--bg--layout);
+  overflow: hidden;
 }
 
-/* TITLE SECTION */
+/* =========================
+   SHARED LAYERING
+========================= */
+
+.product-heading-section,
+.product-content-section {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   LAYOUT 1: TITLE + FEATURES
+========================= */
+
 .product-heading-section {
   padding: 56px 0;
   display: flex;
@@ -21,13 +36,22 @@
   text-align: center;
 }
 
-/* TITLE */
+/* =========================
+   PRODUCT TITLE (FIGMA MATCH)
+========================= */
+
 .product-heading {
   position: relative;
   display: inline-block;
-  font-size: 40px;
+
+  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 900;
-  color: #fff;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  color: #ffffff;
   margin-bottom: 28px;
 }
 
@@ -35,18 +59,27 @@
   display: inline-block;
 }
 
-/* FLOATING BADGE */
+/* =========================
+   FLOATING COMING SOON BADGE
+========================= */
+
 .coming-soon-badge-svg {
   position: absolute;
   top: -22px;
   right: -52px;
+
   width: 81px;
   height: 81px;
-  box-shadow: 0 10px 30px rgba(24,24,24,0.2);
+
+  transform: rotate(-15deg);
+  box-shadow: 0 10px 30px rgba(24, 24, 24, 0.2);
   pointer-events: none;
 }
 
-/* FEATURES */
+/* =========================
+   FEATURES
+========================= */
+
 .product-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -56,54 +89,150 @@
 .feature-item {
   display: flex;
   gap: 10px;
+  align-items: flex-start;
 }
 
 .feature-bullet {
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
+  flex-shrink: 0;
 }
 
 .feature-text {
-  color: #fff;
+  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #ffffff;
   font-size: 16px;
   line-height: 26px;
+  margin: 0;
 }
 
-/* DESCRIPTION */
-.product-content-section {
-  position: relative;
-  padding: 40px 0;
-}
+/* =========================
+   GRADIENT OVERLAY (BETWEEN)
+========================= */
 
 .product-gradient-overlay {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(144deg, #E01A59, #460A48);
-  opacity: 0.25;
-  filter: blur(200px);
+
+  width: 1184px;
+  height: 343px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: linear-gradient(
+    144.39deg,
+    #E01A59 -32.66%,
+    #460A48 71.03%
+  );
+
+  opacity: 30%;
+
+  filter: blur(235px);
+  -webkit-filter: blur(235px);
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* =========================
+   LAYOUT 2: DESCRIPTION
+========================= */
+
+.product-content-section {
+  background: #1706174D;
+  padding: 40px 0;
 }
 
 .product-description {
   position: relative;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .product-description p {
-  color: #fff;
+  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
   line-height: 28px;
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+.product-description strong {
+  font-weight: 500;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
   .product-heading {
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .coming-soon-badge-svg {
-    position: static;
-    display: block;
-    margin: 12px auto 0;
+    width: 72px;
+    height: 72px;
+    top: -18px;
+    right: -44px;
+  }
+
+  .product-gradient-overlay {
+    width: 90%;
+    height: 300px;
+    filter: blur(180px);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-heading {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .coming-soon-badge-svg {
+    width: 64px;
+    height: 64px;
+    top: -14px;
+    right: -36px;
+    transform: rotate(-12deg);
+  }
+
+  .product-gradient-overlay {
+    height: 260px;
+    filter: blur(150px);
+  }
+
+  .product-inner {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-heading {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .coming-soon-badge-svg {
+    width: 56px;
+    height: 56px;
+    top: -10px;
+    right: -28px;
     transform: rotate(-10deg);
+  }
+
+  .product-gradient-overlay {
+    height: 220px;
+    filter: blur(120px);
+  }
+
+  .feature-text,
+  .product-description p {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
