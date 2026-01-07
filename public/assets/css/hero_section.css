@@ -3,10 +3,10 @@
 ========================= */
 
 .hero-section {
-  position: relative;
   width: 100%;
-  height: 741px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 /* =========================
@@ -14,12 +14,13 @@
 ========================= */
 
 .hero-text-box {
-  position: absolute;
-  top: 118px;
-  left: 13.44%;          /* 215 / 1600 */
   width: 37.375%;        /* 598 / 1600 */
+  height: 414px;
+  margin-left: 13.44%;   /* 215 / 1600 */
   display: flex;
+  padding-top: 118px;
   flex-direction: column;
+  z-index: 2;
 }
 
 /* SVG LOGO */
@@ -49,16 +50,16 @@
 
 .hero-image-box {
   position: absolute;
-  left: 53.125%;
+  right: 0;
+  top: 0;
   width: 50.3%;
   max-width: 804.87px;
-  height: 710px;
+  height: 413px;
   z-index: 1;
 }
 
 .hero-image {
   width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
@@ -67,11 +68,8 @@
 ========================= */
 
 .hero-email-box {
-  position: absolute;
-  top: 414px;
-  left: 0;
   width: 100%;
-  height: 327px;
+  padding: 50px 0;
   background: linear-gradient(
     90deg,
     #8E608E 28.16%,
