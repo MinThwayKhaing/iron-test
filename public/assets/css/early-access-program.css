@@ -178,9 +178,7 @@
   will-change: transform, filter;
 }
 
-/* =========================
-   LAYOUT 2: FOOTER
-========================= */
+
 /* =========================
    LAYOUT 2: FOOTER
 ========================= */
@@ -228,4 +226,72 @@
   letter-spacing: 0px;
 
   color: #C6AAC6;
+}
+/* =========================
+   LAYOUT 2 EMAIL SIGNUP
+========================= */
+
+.early-access-email-box {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.early-access-email-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   EMAIL FORM
+========================= */
+
+.early-access-email-form {
+  margin: 0;
+}
+
+.early-access-email-input-wrapper {
+  position: relative;
+  width: 530px;
+  height: 64px;
+}
+
+.early-access-email-input {
+  width: 100%;
+  height: 100%;
+  border-radius: 81px;
+  padding-left: 26px;
+  padding-right: 175px;
+  border: 3px solid #C6AAC6;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.early-access-email-input::placeholder {
+  color: #999;
+}
+
+.early-access-email-submit {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 165px;
+  height: 56px;
+  border-radius: 75px;
+  background: #E01A59;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  cursor: pointer;
 }
