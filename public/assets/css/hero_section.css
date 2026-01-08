@@ -16,7 +16,7 @@
 .hero-text-box {
   width: 37.375%;        /* 598 / 1600 */
   height: 414px;
-  margin-left: 13.44%;   /* 215 / 1600 */
+  margin-left: var(--hero-left-offset);   /* 215 / 1600 */
   display: flex;
   padding-top: 118px;
   flex-direction: column;
@@ -81,7 +81,7 @@
 
 /* Align with hero text */
 .email-content {
-  margin-left: 13.44%;
+  margin-left: var(--hero-left-offset);
   display: flex;
   flex-direction: column;
 }

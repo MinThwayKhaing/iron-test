@@ -50,7 +50,8 @@
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
   <link rel="stylesheet" href="/assets/css/typography.css" />
-  
+  <link rel="stylesheet" href="/assets/css/early-access-program.css" />
+  <link rel="stylesheet" href="/assets/css/nav.css" />
   <!-- Non-critical CSS -->
   <link rel="stylesheet" href="/assets/css/components.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="/assets/css/hero_section.css" media="print" onload="this.media='all'" />

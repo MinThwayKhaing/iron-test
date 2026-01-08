@@ -1,0 +1,175 @@
+/* =========================
+   EARLY ACCESS PROGRAM
+========================= */
+
+.early-access-program {
+  width: 100%;
+  position: relative;
+  background: var(--bg--layout);
+  overflow: hidden;
+}
+
+/* =========================
+   LAYOUT 1
+========================= */
+
+.early-access-heading-section {
+  height: 456px;
+  position: relative;
+}
+
+/* =========================
+   TEXT BOX
+========================= */
+
+.early-access-textbox {
+  width: 1170px;
+  height: 296px;
+  position: absolute;
+  top: 80px;
+  left: var(--hero-left-offset);
+  display: block;
+  gap: 40px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.early-access-heading-wrapper h2 {
+  height: 44px;
+  font-family: var(--font-primary);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.early-access-heading-wrapper span {
+  color: #C6AAC6;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.early-access-text {
+  width: 1170px;
+  height: 84px;
+  margin-top: 40px;
+}
+
+.early-access-text p {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.early-access-cards {
+  height: 88px;
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.early-access-card {
+  width: 383.33px;
+  height: 88px;
+  padding: 23px 30px;
+  display: flex;
+  align-items: center;
+
+  background: #170617CC;
+  border: 3px solid #431F43;
+  border-radius: 122px;
+  gap: 30px;
+}
+
+/* =========================
+   CARD BADGE
+========================= */
+
+.card-badge {
+  height: 36px;
+
+  background: #C6AAC6;
+  border-radius: 126px;
+
+  padding: 4px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-badge span {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: #331433;
+}
+
+/* =========================
+   GRADIENT OVERLAY (NO BORDER)
+========================= */
+
+.early-access-gradient-overlay {
+  position: absolute;
+
+  width: 1184px;
+  height: 343px;
+
+  top: 67.5px;
+  left: 137px;
+
+  background: linear-gradient(
+    144.39deg,
+    #E01A59 -32.66%,
+    #460A48 71.03%
+  );
+
+  opacity: 0.3;
+
+  filter: blur(235px);
+  -webkit-filter: blur(235px);
+  transform: scale(1.1);
+
+  pointer-events: none;
+  z-index: 1;
+  will-change: transform, filter;
+}
+
+/* =========================
+   LAYOUT 2: FOOTER
+========================= */
+
+.early-access-footer-section {
+  height: 230px;
+  background: #1706174D;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.early-access-footer-inner {
+  max-width: 900px;
+  text-align: center;
+}
+
+.early-access-footer-inner p {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0;
+}
