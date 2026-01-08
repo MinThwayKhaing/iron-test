@@ -60,6 +60,15 @@
           <strong><?= isset($product['description']['highlight']) ? esc($product['description']['highlight']) : 'IronPDF library for C++' ?></strong>
           <?= isset($product['description']['body']) ? esc($product['description']['body']) : 'will enhance the C++ developer\'s tool set with robust PDF generation and conversion capabilities. Developers will be able to generate new PDFs from HTML content (from text or from URL), as well as to combine, split, extract, and modify content from existing PDFs.' ?>
         </p>
+      
+        <?php if (!empty($product['paragraphs']) && is_array($product['paragraphs'])): ?>
+          <?php foreach ($product['paragraphs'] as $para): ?>
+            <p>
+              <?= str_replace('%TITLE%', '<strong>'.(isset($product['title']) ? esc($product['title']) : 'IronPDF for C++').'</strong>', esc($para)) ?>
+            </p>
+          <?php endforeach; ?>
+        <?php endif; ?>
+
       </div>
   </div>
 

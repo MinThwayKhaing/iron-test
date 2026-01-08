@@ -24,5 +24,16 @@
   "description": [
     "The new IronPDF library for C++ enhances the C++ developer’s toolset with robust PDF generation and conversion capabilities.",
     "IronPDF for C++ helps developers create high-performance applications with precision and control."
-  ]
+  ],
+  "product": {
+    "title": "IronPDF for C++",
+    "description": {
+      "intro": "The new",
+      "highlight": "IronPDF library for C++",
+      "body": "will enhance the C++ developer’s tool set with robust PDF generation and conversion capabilities. Developers will be able to generate new PDFs from HTML content (from text or from URL), as well as to combine, split, extract, and modify content from existing PDFs."
+    },
+    "paragraphs": [
+      "%TITLE% will help developers create C++ applications that can do all of these PDF processing tasks and more, with speed, precision, control, and excellence."
+    ]
+  }
 }
