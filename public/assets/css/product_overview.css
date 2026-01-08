@@ -19,17 +19,18 @@
 ========================= */
 
 .product-heading-section {
-height: 264px;
-padding: 48px 0 50px 0;
-
+  height: 264px;
+  padding: 48px 0 50px 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .product-inner {
-
   width: 100%;
   text-align: center;
+  max-width: 1600px;
 }
 
 /* =========================
@@ -78,9 +79,10 @@ padding: 48px 0 50px 0;
 .product-features {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0; /* spacing is handled by divider margins */
-  padding-left: 0;
+  padding-left: var(--hero-left-offset);
+  width: 100%;
 }
 
 .feature-item {
@@ -103,7 +105,7 @@ padding: 48px 0 50px 0;
 }
 
 .feature-bullet {
-  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-primary);
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
@@ -113,7 +115,7 @@ padding: 48px 0 50px 0;
 }
 
 .feature-text {
-  font-family: 'Gotham', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-primary);
   color: #ffffff;
   font-weight: 300;
   font-size: 16px;
@@ -147,7 +149,7 @@ padding: 48px 0 50px 0;
     #460A48 71.03%
   );
 
-  opacity: 30%;
+  opacity: 0.3;
 
   filter: blur(235px);
   -webkit-filter: blur(235px);
@@ -163,7 +165,7 @@ padding: 48px 0 50px 0;
 .product-content-section {
   background: #1706174D;
   height: 274px;
- padding: 55px 0 57px 14.4%;
+ padding: 55px 0 57px var(--hero-left-offset);
 }
 
 .product-description {

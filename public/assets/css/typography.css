@@ -59,7 +59,7 @@
 ========================= */
 
 .email-footer-text {
-  font-family: Gotham, Arial, sans-serif;
+  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
@@ -67,7 +67,7 @@
 }
 
 .email-footer-text span {
-  font-family: Gotham, Arial, sans-serif;
+  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
