@@ -55,6 +55,7 @@
   <link rel="stylesheet" href="/assets/css/components.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="/assets/css/hero_section.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="/assets/css/product_overview.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/css/product-benefits.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="/assets/css/responsive.css" media="print" onload="this.media='all'" />
 
   <!-- Favicon -->
