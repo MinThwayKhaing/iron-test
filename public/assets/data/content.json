@@ -36,10 +36,8 @@
       "%TITLE% will help developers create C++ applications that can do all of these PDF processing tasks and more, with speed, precision, control, and excellence."
     ]
   },
-  "benefits": {
-    "title": "Why make a C++ PDF Library",
-    "highlight": "C++ PDF Library",
-    "lead": "C++ is one of the most popular, oldest, and important programming languages in use, being the language of choice in low-level systems and network programming and other domains where performance is critical.",
-    "follow": "IronPDF for C++ will help developers create C++ applications that can do all of these PDF processing tasks and more, with speed, precision, control, and excellence."
+  "early_access": {
+    "title": "Early Access to C++ PDF Library",
+    "text": "Joining the early access program will allow you to collaborate closely with our engineering team. You will be playing a key role in the development process as you share your early experiences using the C++ PDF library before its official launch. Your continual feedback after we release the library will be immensely helpful as we release new features and improve on existing features."
   }
 }
