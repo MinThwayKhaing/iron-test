@@ -53,7 +53,7 @@
   <div class="product-content-section">
 
 
-    <div class="product-inner">
+   
       <div class="product-description">
         <p>
           <?= isset($product['description']['intro']) ? esc($product['description']['intro']) : 'The new' ?> 
@@ -61,7 +61,6 @@
           <?= isset($product['description']['body']) ? esc($product['description']['body']) : 'will enhance the C++ developer\'s tool set with robust PDF generation and conversion capabilities. Developers will be able to generate new PDFs from HTML content (from text or from URL), as well as to combine, split, extract, and modify content from existing PDFs.' ?>
         </p>
       </div>
-    </div>
   </div>
 
 </section>
