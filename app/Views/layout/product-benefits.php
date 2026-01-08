@@ -2,7 +2,7 @@
   <div class="product-benefits-inner">
     <div class="benefits-icon">
     <svg width="308" height="216" viewBox="20 0 308 216" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="HTML to PDF icon" filter="url(#filter0_d_1_2763)">
+<g id="HTML to PDF icon" filter="url(#filter0_d_1_2763)" aria-hidden="true">
 <g id="2">
 <path id="5" fill-rule="evenodd" clip-rule="evenodd" d="M173.813 190.783H275.692V67.7575L254.957 46.9608H173.813V190.783Z" fill="#F20036"/>
 <path id="4" fill-rule="evenodd" clip-rule="evenodd" d="M254.986 67.7436L265.312 57.3713L275.691 67.7436V88.5439L254.986 67.7436Z" fill="#E10029"/>
@@ -44,13 +44,14 @@
         Why make a <span class="highlight">C++ PDF Library</span>
       </h3>
 
-      <p class="benefits-lead">
-        C++ is one of the most popular, oldest, and important programming languages in use, being the language of choice in low-level systems and network programming and other domains where performance is critical.
-      </p>
+     <p class="benefits-lead">
+  <?= htmlspecialchars($benefits['lead'] ?? 'C++ is one of the most popular...') ?>
+</p>
 
-      <p class="benefits-follow">
-        IronPDF for C++ will help developers create C++ applications that can do all of these PDF processing tasks and more, with speed, precision, control, and excellence.
-      </p>
+<p class="benefits-follow">
+  <?= htmlspecialchars($benefits['follow'] ?? 'IronPDF for C++ will help developers...') ?>
+</p>
+
     </div>
   </div>
 </section>
