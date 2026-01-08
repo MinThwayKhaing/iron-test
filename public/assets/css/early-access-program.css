@@ -93,6 +93,19 @@
   gap: 30px;
 }
 
+
+.early-access-card-coming-soon {
+  width: 383.33px;
+  height: 88px;
+  padding: 23px 30px;
+  display: flex;
+  align-items: center;
+
+  background: #170617CC;
+  border: 3px solid #331433;
+  border-radius: 122px;
+  gap: 30px;
+}
 /* =========================
    CARD BADGE
 ========================= */
@@ -108,13 +121,31 @@
   align-items: center;
   justify-content: center;
 }
+.card-badge-coming-soon {
+  height: 36px;
 
+  background: #331433;
+  border-radius: 126px;
+
+  padding: 4px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .card-badge span {
   font-family: var(--font-primary);
   font-weight: 700;
   font-size: 14px;
   line-height: 28px;
   color: #331433;
+}
+.card-badge-coming-soon span {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: #C6AAC6;
+;
 }
 
 /* =========================

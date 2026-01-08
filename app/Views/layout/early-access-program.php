@@ -39,16 +39,26 @@
     /></div>
         </div>
 
-        <div class="early-access-card">
-          <div class="card-badge">
-            <span># Feedback</span>
+        <div class="early-access-card-coming-soon">
+          <div class="card-badge-coming-soon">
+            <span># Coming Soon</span>
           </div>
+             <div>  <img
+      src="/assets/svg/python-iron-pdf.svg"
+      alt="Java IronPDF"
+      class="badge-icon"
+    /></div>
         </div>
 
-        <div class="early-access-card">
-          <div class="card-badge">
-            <span># Roadmap</span>
+        <div class="early-access-card-coming-soon">
+          <div class="card-badge-coming-soon">
+            <span># Coming Soon</span>
           </div>
+             <div>  <img
+      src="/assets/svg/nodejs-iron-pdf.svg"
+      alt="Java IronPDF"
+      class="badge-icon"
+    /></div>
         </div>
 
       </div>
@@ -65,7 +75,7 @@
   <div class="early-access-footer-section">
     <div class="early-access-footer-inner">
       <p>
-        Join the early access program and help shape the future of IronPDF.
+        Sign up to our Beta Program
       </p>
     </div>
   </div>
