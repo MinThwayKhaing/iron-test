@@ -12,7 +12,10 @@
   /* =========================
      TYPOGRAPHY
   ========================= */
-  --font-primary: "Gotham", Arial, sans-serif;
+  --font-primary: 'Gotham',
+                  'Montserrat',
+                  system-ui,
+                  sans-serif;
 
   /* =========================
      LAYOUT CONSTANTS

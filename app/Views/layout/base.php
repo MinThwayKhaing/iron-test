@@ -35,8 +35,17 @@
     crossorigin="anonymous"
     defer
   />
+<!-- Google Font (Montserrat as Gotham substitute) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- Critical CSS (inline or early load) -->
+   <link rel="stylesheet" href="/assets/css/fonts.css" />
+
   <link rel="stylesheet" href="/assets/css/variables.css" />
   <link rel="stylesheet" href="/assets/css/base.css" />
   <link rel="stylesheet" href="/assets/css/layout.css" />
