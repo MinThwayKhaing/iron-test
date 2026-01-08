@@ -1,5 +1,7 @@
 <section class="hero-section">
+
   <!-- LEFT HERO TEXT -->
+    <div class="hero-top">
   <div class="hero-text-box">
     <img
       src="/assets/svg/LOGO-2.svg"
@@ -21,14 +23,13 @@
 
     <p class="hero-subtext"><?= $hero['note'] ?? 'Coming Soon' ?></p>
   </div>
-
+</div>
   <!-- RIGHT IMAGE -->
   <div class="hero-image-box">
     <img
       src="/assets/svg/IMAGE.svg"
       alt="Hero Illustration - IronPDF for C++"
       class="hero-image"
-      width="804"
   
       loading="lazy"
     />

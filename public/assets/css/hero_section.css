@@ -13,12 +13,24 @@
    LEFT HERO CONTENT
 ========================= */
 
+.hero-top {
+  position: relative;
+  width: 100%;
+  height: 414px; /* Figma artboard height */
+
+  /* Layout spacing (Figma-derived) */
+  padding: 118px 0 34px var(--hero-left-offset);
+
+  box-sizing: border-box;
+}
+
+
 .hero-text-box {
-  width: 37.375%;        /* 598 / 1600 */
-  height: 414px;
-  margin-left: var(--hero-left-offset);   /* 215 / 1600 */
+  width: 49.7%;        /* 598 / 1600 */
+  height: 262px;
+
   display: flex;
-  padding-top: 118px;
+
   flex-direction: column;
   z-index: 2;
 }
@@ -30,7 +42,7 @@
 }
 
 .hero-context {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .hero-title {
@@ -53,12 +65,12 @@
   right: 0;
   top: 0;
   width: 50.3%;
-
   z-index: 1;
 }
 
 .hero-image {
   width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 

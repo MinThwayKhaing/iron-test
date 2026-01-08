@@ -6,7 +6,13 @@
   --fw-regular: 400;
   --fw-bold: 700;
   --fw-extra-bold: 900;
+  --fw-extra-bold: 900;
 
+  --hero-headline-size: 50px;
+  --hero-headline-line: 54px;
+
+  --hero-subtext-size: 14px;
+  --hero-subtext-line: 28px;
   --hero-context-size: 18px;
   --hero-context-line: 26px;
 
@@ -32,16 +38,23 @@
    HERO TYPOGRAPHY
 ========================= */
 .hero-context {
-  font-weight: var(--fw-bold);
-  font-size: var(--hero-context-size);
-  line-height: var(--hero-context-line);
+  font-family: var(--font-primary); /* Gotham */
+  font-weight: var(--fw-bold);      /* 700 */
+  font-size: var(--hero-context-size); /* 18px */
+  line-height: var(--hero-context-line); /* 26px */
+  letter-spacing: 0px;
+  margin: 0;
 }
 
 .hero-title {
+  font-family: var(--font-primary); /* Gotham */
   font-weight: var(--fw-extra-bold);
-  font-size: var(--hero-title-size);
-  line-height: var(--hero-title-line);
+  font-size: var(--hero-headline-size);
+  line-height: var(--hero-headline-line);
+  letter-spacing: 0px;
+  margin: 0;
 }
+
 
 .hero-highlight {
   color: #C6AAC6;
@@ -71,4 +84,17 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
+}
+/* =========================
+   COMING SOON BADGE
+========================= */
+
+.coming-soon-btn,
+.card-badge-coming-soon span {
+  font-family:  var(--font-primary);
+  font-weight: 700;
+  font-style: normal; /* Bold handled by weight */
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0px;
 }
