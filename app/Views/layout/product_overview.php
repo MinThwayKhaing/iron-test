@@ -19,29 +19,29 @@
       </h2>
 
       <!-- FEATURES -->
-      <div class="product-features">
+       <ul class="product-features" role="list">
         <?php if (!empty($features) && is_array($features)): ?>
           <?php foreach ($features as $feature): ?>
-            <div class="feature-item">
-              <span class="feature-bullet">#</span>
-              <p class="feature-text"><?= esc($feature) ?></p>
-            </div>
+            <li class="feature-item">
+              <span class="feature-bullet" aria-hidden="true">#</span>
+              <span class="feature-text"><?= esc($feature) ?></span>
+            </li>
           <?php endforeach; ?>
         <?php else: ?>
-          <div class="feature-item">
-            <span class="feature-bullet">#</span>
-            <p class="feature-text">Generate PDFs from HTML in C++</p>
-          </div>
-          <div class="feature-item">
-            <span class="feature-bullet">#</span>
-            <p class="feature-text">Combine, split, and modify PDFs quickly in C++</p>
-          </div>
-          <div class="feature-item">
-            <span class="feature-bullet">#</span>
-            <p class="feature-text">Extract text and images from PDFs using C++</p>
-          </div>
+          <li class="feature-item">
+            <span class="feature-bullet" aria-hidden="true">#</span>
+            <span class="feature-text">Generate PDFs from HTML in C++</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-bullet" aria-hidden="true">#</span>
+            <span class="feature-text">Combine, split, and modify PDFs quickly in C++</span>
+          </li>
+          <li class="feature-item">
+            <span class="feature-bullet" aria-hidden="true">#</span>
+            <span class="feature-text">Extract text and images from PDFs using C++</span>
+          </li>
         <?php endif; ?>
-      </div>
+      </ul>
 
     </div>
   </div>
