@@ -13,26 +13,22 @@
    SHARED LAYERING
 ========================= */
 
-.product-heading-section,
-.product-content-section {
-  position: relative;
-  z-index: 2;
-}
 
 /* =========================
    LAYOUT 1: TITLE + FEATURES
 ========================= */
 
 .product-heading-section {
-  padding: 56px 0;
+height: 264px;
+padding: 48px 0 50px 14.4%;
+
   display: flex;
   justify-content: center;
 }
 
 .product-inner {
-  max-width: 1600px;
+
   width: 100%;
-  padding: 0 40px;
   text-align: center;
 }
 
@@ -141,7 +137,8 @@
 
 .product-content-section {
   background: #1706174D;
-  padding: 40px 0;
+  height: 274px;
+ padding: 55px 0 57px 0;
 }
 
 .product-description {
