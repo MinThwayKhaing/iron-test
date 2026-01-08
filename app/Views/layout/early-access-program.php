@@ -72,12 +72,12 @@
   <!-- =========================
        LAYOUT 2: FOOTER
   ========================== -->
-  <div class="early-access-footer-section">
-    <div class="early-access-footer-inner">
-      <p>
-        Sign up to our Beta Program
-      </p>
-    </div>
+<div class="early-access-footer-section">
+  <div class="early-access-footer-inner">
+    <p class="early-access-footer-text">
+      Sign up to our <span>Beta Program</span>
+    </p>
   </div>
+</div>
 
 </section>
