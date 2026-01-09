@@ -6,12 +6,51 @@
    TABLET & MEDIUM DEVICES (max-width: 1200px)
 ========================= */
 @media (max-width: 1200px) {
+  
+  .hero-section {
+    flex-direction: column; /* stack hero-top and hero-email-box */
+  }
+
+  .hero-top {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .hero-image-box {
+    width: 100%;
+    position: relative;
+    margin-top: 20px; /* space between text and image */
+    display: block; /* show image below hero text */
+  }
+
+  .hero-email-box {
+    width: 100%;
+    margin-top: 30px; /* spacing between hero-top and email box */
+
+    padding-right: 40px;
+  }
   .early-access-email-input-wrapper {
     width: 80%;      /* scale down from 600px */
     max-width: 500px;
     height: 50px;
   }
 
+   .email-footer {
+    flex-direction: column; /* stack button and text */
+    align-items: flex-start; /* align to left */
+    gap: 8px;
+  }
+
+  .coming-soon-btn,
+  .email-footer-text {
+    display: block;          /* stack each item */
+  }
+
+  .email-footer-text {
+    white-space: normal;     /* allow text to wrap */
+    font-size: 14px;
+  }
   .early-access-email-input {
     padding-left: 20px;
     padding-right: 140px; /* adjust for button */
@@ -33,6 +72,65 @@
    MOBILE & SMALL DEVICES (max-width: 768px)
 ========================= */
 @media (max-width: 768px) {
+   .hero-section {
+    flex-direction: column; /* ensure stacking */
+  }
+
+  .hero-top {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 0 var(--hero-left-offset);
+  }
+
+  .hero-image-box {
+    display: none; /* hide hero image on mobile */
+  }
+
+  .hero-email-box {
+    width: 100%;
+    margin-top: 20px;
+   
+  }
+
+  /* Email footer stack */
+  .email-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .coming-soon-btn,
+  .email-footer-text {
+    display: block;
+  }
+
+  .email-footer-text {
+    white-space: normal;
+    font-size: 14px;
+  }
+    .hero-image-box {
+    display: none;
+  }
+.email-footer {
+    gap: 6px;
+  }
+
+  .coming-soon-btn {
+    width: 100%;            /* full width for smaller screens */
+    text-align: center;
+  }
+
+  .email-footer-text {
+    font-size: 13px;
+  }
+  /* Center the hero text and email form */
+  .hero-top,
+  .hero-text-box,
+  .email-content {
+    width: 100%;
+    height: auto;
+
+  }
   .early-access-email-input-wrapper {
     width: 90%;
     max-width: 100%;
@@ -56,11 +154,30 @@
    EXTRA SMALL DEVICES (max-width: 480px)
 ========================= */
 @media (max-width: 480px) {
+
+
+  .coming-soon-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    height: 28px;
+  }
+
+  .email-footer-text {
+    font-size: 12px;
+  }
   .early-access-email-input-wrapper {
     width: 95%;
     height: 44px;
   }
+  .coming-soon-btn {
+    font-size: 12px;
+    height: 28px;
+  }
 
+  .email-footer-text {
+    font-size: 12px;
+  }
   .early-access-email-input {
     padding-left: 14px;
     padding-right: 100px;
@@ -78,6 +195,9 @@
    TINY DEVICES (max-width: 320px)
 ========================= */
 @media (max-width: 320px) {
+  .nav-link {
+  font-size: 8px;
+  }
   .early-access-email-input-wrapper {
     width: 100%;
     height: 40px;

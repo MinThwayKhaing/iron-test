@@ -182,6 +182,7 @@
 }
 
 .coming-soon-btn {
+  min-width: 149px;
   height: 32px;
   padding: 0 18px;
   border-radius: 126px;
