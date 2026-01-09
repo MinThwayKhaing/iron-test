@@ -6,9 +6,10 @@
    TABLET & MEDIUM DEVICES (max-width: 1200px)
 ========================= */
 @media (max-width: 1200px) {
-  
+
   .hero-section {
-    flex-direction: column; /* stack hero-top and hero-email-box */
+    flex-direction: column;
+    /* stack hero-top and hero-email-box */
   }
 
   .hero-top {
@@ -20,40 +21,55 @@
   .hero-image-box {
     width: 100%;
     position: relative;
-    margin-top: 20px; /* space between text and image */
-    display: block; /* show image below hero text */
+    margin-top: 20px;
+    /* space between text and image */
+    display: block;
+    /* show image below hero text */
   }
 
   .hero-email-box {
     width: 100%;
-    margin-top: 30px; /* spacing between hero-top and email box */
+    margin-top: 30px;
+    /* spacing between hero-top and email box */
 
     padding-right: 40px;
   }
+
+  .email-input-wrapper {
+    width: auto;
+  }
+
   .early-access-email-input-wrapper {
-    width: 80%;      /* scale down from 600px */
+    width: 80%;
+    /* scale down from 600px */
     max-width: 500px;
     height: 50px;
   }
 
-   .email-footer {
-    flex-direction: column; /* stack button and text */
-    align-items: flex-start; /* align to left */
+  .email-footer {
+    flex-direction: column;
+    /* stack button and text */
+    align-items: flex-start;
+    /* align to left */
     gap: 8px;
   }
 
   .coming-soon-btn,
   .email-footer-text {
-    display: block;          /* stack each item */
+    display: block;
+    /* stack each item */
   }
 
   .email-footer-text {
-    white-space: normal;     /* allow text to wrap */
+    white-space: normal;
+    /* allow text to wrap */
     font-size: 14px;
   }
+
   .early-access-email-input {
     padding-left: 20px;
-    padding-right: 140px; /* adjust for button */
+    padding-right: 140px;
+    /* adjust for button */
     font-size: 14px;
     height: 100%;
   }
@@ -70,7 +86,7 @@
   /* =========================
   product-overview adjustments
 ========================= */
- .product-heading {
+  .product-heading {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 40px;
@@ -89,7 +105,7 @@
     filter: blur(180px);
   }
 
-  
+
 
   .feature-item {
     height: auto;
@@ -100,18 +116,21 @@
     font-size: 15px;
     line-height: 24px;
   }
-/* =========================
+
+  /* =========================
    EARLY ACCESS PROGRAM RESPONSIVE
 ========================= */
- .early-access-heading-section {
-    height: auto; /* allow flexible height */
+  .early-access-heading-section {
+    height: auto;
+    /* allow flexible height */
     padding: 60px 40px 40px 40px;
   }
 
   .early-access-textbox {
     width: 100%;
     height: auto;
-    max-width: 900px; /* scale down from 1170px */
+    max-width: 900px;
+    /* scale down from 1170px */
     position: relative;
     top: 0;
     left: 0;
@@ -146,7 +165,8 @@
   .early-access-card,
   .early-access-card-coming-soon {
     width: 100%;
-    max-width: 350px; /* smaller cards on tablet */
+    max-width: 350px;
+    /* smaller cards on tablet */
     height: 80px;
     padding: 18px 20px;
     gap: 20px;
@@ -184,8 +204,13 @@
 ========================= */
 @media (max-width: 768px) {
 
-   .hero-section {
-    flex-direction: column; /* ensure stacking */
+  .hero-section {
+    flex-direction: column;
+    /* ensure stacking */
+  }
+
+  .email-input-wrapper {
+    width: auto;
   }
 
   .hero-top {
@@ -195,13 +220,14 @@
   }
 
   .hero-image-box {
-    display: none; /* hide hero image on mobile */
+    display: none;
+    /* hide hero image on mobile */
   }
 
   .hero-email-box {
     width: 100%;
     margin-top: 20px;
-   
+
   }
 
   /* Email footer stack */
@@ -220,10 +246,12 @@
     white-space: normal;
     font-size: 14px;
   }
-    .hero-image-box {
+
+  .hero-image-box {
     display: none;
   }
-.email-footer {
+
+  .email-footer {
     gap: 6px;
   }
 
@@ -234,6 +262,7 @@
   .email-footer-text {
     font-size: 13px;
   }
+
   /* Center the hero text and email form */
   .hero-top,
   .hero-text-box,
@@ -242,6 +271,7 @@
     height: auto;
 
   }
+
   .early-access-email-input-wrapper {
     width: 90%;
     max-width: 100%;
@@ -259,7 +289,8 @@
     height: 42px;
     font-size: 11px;
   }
-    /* =========================
+
+  /* =========================
   product-overview adjustments
 ========================= */
   .product-heading-section {
@@ -323,10 +354,11 @@
     font-size: 14px;
     line-height: 22px;
   }
+
   /* =========================
    EARLY ACCESS PROGRAM RESPONSIVE
 ========================= */
- .early-access-heading-section {
+  .early-access-heading-section {
     padding: 40px 20px 20px 20px;
   }
 
@@ -391,7 +423,9 @@
    EXTRA SMALL DEVICES (max-width: 480px)
 ========================= */
 @media (max-width: 480px) {
-
+  .email-input-wrapper {
+    width: auto;
+  }
 
   .coming-soon-btn {
     text-align: center;
@@ -402,10 +436,12 @@
   .email-footer-text {
     font-size: 12px;
   }
+
   .early-access-email-input-wrapper {
     width: 95%;
     height: 44px;
   }
+
   .coming-soon-btn {
     font-size: 12px;
     height: 28px;
@@ -414,6 +450,7 @@
   .email-footer-text {
     font-size: 12px;
   }
+
   .early-access-email-input {
     padding-left: 14px;
     padding-right: 100px;
@@ -425,10 +462,11 @@
     height: 40px;
     font-size: 10px;
   }
-    /* =========================
+
+  /* =========================
   product-overview adjustments
 ========================= */
-.product-heading-section {
+  .product-heading-section {
     height: auto;
     padding: 30px 0 20px 0;
   }
@@ -476,7 +514,7 @@
 
   .product-content-section {
     height: auto;
-  
+
     background: rgba(23, 6, 23, 0.3);
   }
 
@@ -489,10 +527,11 @@
     font-size: 13px;
     line-height: 20px;
   }
+
   /* =========================
    EARLY ACCESS PROGRAM RESPONSIVE
 ========================= */
- .early-access-heading-section {
+  .early-access-heading-section {
     padding: 30px 15px 15px 15px;
   }
 
@@ -546,9 +585,14 @@
    TINY DEVICES (max-width: 320px)
 ========================= */
 @media (max-width: 320px) {
-  .nav-link {
-  font-size: 7px;
+  .email-input-wrapper {
+    width: auto;
   }
+
+  .nav-link {
+    font-size: 7px;
+  }
+
   .early-access-email-input-wrapper {
     width: 100%;
     height: 40px;
