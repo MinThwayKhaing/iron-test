@@ -66,12 +66,124 @@
     right: 3px;
     bottom: 3px;
   }
+
+  /* =========================
+  product-overview adjustments
+========================= */
+ .product-heading {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 40px;
+  }
+
+  .coming-soon-badge-svg {
+    width: 72px;
+    height: 72px;
+    top: -18px;
+    right: -44px;
+  }
+
+  .product-gradient-overlay {
+    width: 90%;
+    height: 300px;
+    filter: blur(180px);
+  }
+
+  
+
+  .feature-item {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .feature-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+/* =========================
+   EARLY ACCESS PROGRAM RESPONSIVE
+========================= */
+ .early-access-heading-section {
+    height: auto; /* allow flexible height */
+    padding: 60px 40px 40px 40px;
+  }
+
+  .early-access-textbox {
+    width: 100%;
+    height: auto;
+    max-width: 900px; /* scale down from 1170px */
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .early-access-heading-wrapper h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .early-access-text {
+    width: 100%;
+    height: auto;
+  }
+
+  .early-access-text p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .early-access-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .early-access-card,
+  .early-access-card-coming-soon {
+    width: 100%;
+    max-width: 350px; /* smaller cards on tablet */
+    height: 80px;
+    padding: 18px 20px;
+    gap: 20px;
+  }
+
+  .card-badge,
+  .card-badge-coming-soon {
+    height: 32px;
+    padding: 3px 20px;
+  }
+
+  .card-badge span,
+  .card-badge-coming-soon span {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .badge-icon {
+    width: 40px;
+    height: auto;
+  }
+
+  .early-access-gradient-overlay {
+    width: 100%;
+    height: 300px;
+    top: 50px;
+    left: 0;
+    filter: blur(180px);
+  }
+
 }
 
 /* =========================
    MOBILE & SMALL DEVICES (max-width: 768px)
 ========================= */
 @media (max-width: 768px) {
+
    .hero-section {
     flex-direction: column; /* ensure stacking */
   }
@@ -116,7 +228,6 @@
   }
 
   .coming-soon-btn {
-    width: 100%;            /* full width for smaller screens */
     text-align: center;
   }
 
@@ -148,6 +259,132 @@
     height: 42px;
     font-size: 11px;
   }
+    /* =========================
+  product-overview adjustments
+========================= */
+  .product-heading-section {
+    padding: 40px 0 30px 0;
+  }
+
+  .product-heading {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  .coming-soon-badge-svg {
+    width: 64px;
+    height: 64px;
+    top: -14px;
+    right: -36px;
+  }
+
+  .product-gradient-overlay {
+    height: 260px;
+    filter: blur(150px);
+    top: 180px;
+  }
+
+
+
+  .product-features {
+    flex-direction: column;
+
+    gap: 20px 0;
+  }
+
+  .feature-item {
+    flex-direction: row;
+    height: auto;
+    border: none;
+    padding: 10px 0;
+  }
+
+  .feature-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .feature-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .product-content-section {
+    height: auto;
+
+  }
+
+  .product-description {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .product-description p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  /* =========================
+   EARLY ACCESS PROGRAM RESPONSIVE
+========================= */
+ .early-access-heading-section {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .early-access-textbox {
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+
+  .early-access-heading-wrapper h2 {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .early-access-text p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .early-access-cards {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .early-access-card,
+  .early-access-card-coming-soon {
+    width: 100%;
+    max-width: 280px;
+    padding: 15px 16px;
+    height: 70px;
+    gap: 15px;
+  }
+
+  .card-badge,
+  .card-badge-coming-soon {
+    height: 28px;
+    padding: 3px 16px;
+  }
+
+  .card-badge span,
+  .card-badge-coming-soon span {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .badge-icon {
+    width: 32px;
+  }
+
+  .early-access-gradient-overlay {
+    height: 250px;
+    filter: blur(150px);
+    top: 40px;
+  }
 }
 
 /* =========================
@@ -157,7 +394,6 @@
 
 
   .coming-soon-btn {
-    width: 100%;
     text-align: center;
     font-size: 12px;
     height: 28px;
@@ -189,6 +425,121 @@
     height: 40px;
     font-size: 10px;
   }
+    /* =========================
+  product-overview adjustments
+========================= */
+.product-heading-section {
+    height: auto;
+    padding: 30px 0 20px 0;
+  }
+
+  .product-heading {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .coming-soon-badge-svg {
+    width: 56px;
+    height: 56px;
+    top: -10px;
+    right: -28px;
+  }
+
+  .product-gradient-overlay {
+    height: 220px;
+    filter: blur(120px);
+    width: 95%;
+    top: 150px;
+  }
+
+
+
+  .product-features {
+    flex-direction: column;
+    gap: 16px 0;
+  }
+
+  .feature-item {
+    flex-direction: row;
+    gap: 8px;
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .feature-text,
+  .product-description p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .product-content-section {
+    height: auto;
+  
+    background: rgba(23, 6, 23, 0.3);
+  }
+
+  .product-description {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .product-description strong {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  /* =========================
+   EARLY ACCESS PROGRAM RESPONSIVE
+========================= */
+ .early-access-heading-section {
+    padding: 30px 15px 15px 15px;
+  }
+
+  .early-access-heading-wrapper h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .early-access-text p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .early-access-cards {
+    gap: 10px;
+  }
+
+  .early-access-card,
+  .early-access-card-coming-soon {
+    max-width: 100%;
+    width: 100%;
+    height: 65px;
+    padding: 12px 12px;
+    gap: 12px;
+  }
+
+  .card-badge,
+  .card-badge-coming-soon {
+    height: 24px;
+    padding: 2px 12px;
+  }
+
+  .card-badge span,
+  .card-badge-coming-soon span {
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  .badge-icon {
+    width: 28px;
+  }
+
+  .early-access-gradient-overlay {
+    height: 200px;
+    filter: blur(120px);
+    top: 30px;
+  }
 }
 
 /* =========================
@@ -196,7 +547,7 @@
 ========================= */
 @media (max-width: 320px) {
   .nav-link {
-  font-size: 8px;
+  font-size: 7px;
   }
   .early-access-email-input-wrapper {
     width: 100%;
