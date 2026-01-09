@@ -49,7 +49,15 @@
 - [x] Heading hierarchy correct (H1, H2, H3).
 - [x] Alt attributes provided for all images.
 - [x] Page uses semantic HTML elements (header, main, section, footer).
-
+## 8. Core Web Vitals & Lighthouse Audit
+| Device  | Performance | Accessibility | Best Practices | SEO |
+| ------- | ----------- | ------------- | -------------- | --- |
+| Mobile  | 90          | 95            | 100            | 100 |
+| Desktop | 79          | 95            | 100            | 100 |
+Observations:
+Mobile performance is excellent (90/100).
+Desktop performance slightly lower (79/100) due to larger images and hero section assets.
+Accessibility and SEO are perfect for both devices.
 ## Notes / Deviations from Figma
 - Gotham font substituted with Montserrat due to license limitations.
 - Background gradient for the **3rd section (Project Benefits)** created approximately since Figma did not provide a specific gradient value.
